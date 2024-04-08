@@ -4,7 +4,7 @@ require_once("./conexao.php");
 $txtNomeObjetivo_Smart = $_POST['txtNomeObjetivo_Smart'];
 $txtDescricaoObjetivo_Smart = $_POST['txtDescricaoObjetivo_Smart'];
 
-$str_sql_cadastrar_Objetivo_Smart= "insert into `objetivo_smart` (`nome`,`descricao`) values ('$txtNomeObjetivo_Smart','$txtDescricaoObjetivo_Smart'); ";
+$str_sql_cadastrar_Objetivo_Smart= "insert into `objetivos_smart` (`nome`,`descricao`) values ('$txtNomeObjetivo_Smart','$txtDescricaoObjetivo_Smart'); ";
 
 try{
     $cadastrar_Objetivo_Smart = mysqli_query($conexao, $str_sql_cadastrar_Objetivo_Smart);
